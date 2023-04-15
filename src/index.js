@@ -13,18 +13,17 @@
 // console.log(arr);
 
 const unsortedArray = [1, 3, 5, 6, 2, 4, 7, 8]
-function sort(arrForSort) {
+function sort(arrForSort, i, end) {
+    const array = []
     const { length } = arrForSort
     if (length == 1) { return }
     if (length > 0) {
-        const mid = length / 2
-        const array = []
-        for (let i = 0; i < mid; i++) {
+        for (; i < end; i++) {
             array.push(arrForSort[i])
         }
-        console.log(array);
-        sort(array)
-    }
+        sort(array, length - length, length / 2)
 
+        console.log(array);
+    }
 }
-sort(unsortedArray)
+sort(unsortedArray, 0, 4)

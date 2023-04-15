@@ -1,0 +1,1 @@
+!function o(n,c,f){const l=[],{length:s}=n;if(1!=s&&s>0){for(;c<f;c++)l.push(n[c]);o(l,s-s,s/2),console.log(l)}}([1,3,5,6,2,4,7,8],0,4);

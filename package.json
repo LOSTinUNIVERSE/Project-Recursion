@@ -4,7 +4,9 @@
   "description": "just a template repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": " npx webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.5",
+    "webpack-cli": "^5.0.1"
   }
 }
