@@ -1,1 +1,1 @@
-!function o(n,c,f){const l=[],{length:s}=n;if(1!=s&&s>0){for(;c<f;c++)l.push(n[c]);o(l,s-s,s/2),console.log(l)}}([1,3,5,6,2,4,7,8],0,4);
+!function n(t){if(t.length<=1)return t;const e=t.length/2,l=t.slice(0,e),o=t.slice(e);return n(l),n(o),function(n,t){let e=0,l=0;const o=[];let c=0;for(;e<n.length&&l<t.length;)n[e]<t[l]?(o[c]=n[e],e++,c++):(o[c]=t[l],l++,c++);return l<t.length&&(o[c]=t[l]),e<n.length&&(o[c]=n[e]),console.log(o)}(l,o)}([1,3,5,6,2,4,7,8]);
